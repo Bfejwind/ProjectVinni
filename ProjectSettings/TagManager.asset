@@ -33,6 +33,7 @@ TagManager:
   - QDSUIToggleCheckboxRadio
   - QDSUIToggleThumbnail
   - Victim
+  - Hazard
   layers:
   - Default
   - TransparentFX

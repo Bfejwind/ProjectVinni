@@ -1,13 +1,16 @@
 using UnityEngine;
+using UnityEngine.Splines;
 
 public class BalloonFollow : MonoBehaviour
 {
     [SerializeField] private VictimBehaviour victimScript;
+    public SplineAnimate balloonSpline;
     void OnTriggerEnter(Collider other)
     {
         other.TryGetComponent(out VictimBehaviour victimscript);
         if (victimscript != null)
         {
+            balloonSpline.Play();
             victimScript = victimscript;
         }
     }
